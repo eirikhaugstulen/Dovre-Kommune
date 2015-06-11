@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DovreKommune.PostMessage">
+
+	<ContentPage.Content>
+	    <StackLayout>
+      <StackLayout.Children>
+
+        <Label x:Name="Skoleprosjekt"
+               Text="Skoleprosjekt"
+               FontSize="Large"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand">
+          <Label.TextColor>
+                Black
+          </Label.TextColor>
+        </Label>
+
+        <Entry BackgroundColor="White"
+               TextColor="Black"
+               Placeholder="Navn:"
+               VerticalOptions="Fill">
+        </Entry>
+
+        <Entry Placeholder="Emne:"
+               TextColor="Black">
+        </Entry>
+
+        <Editor> 
+        </Editor>
+
+
+        <Button Text="Send"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand" />
+      </StackLayout.Children>
+    </StackLayout>
+  
+	</ContentPage.Content>
+</ContentPage>

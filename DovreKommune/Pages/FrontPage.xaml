@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DovreKommune.FrontPage">
+	<ContentPage.Content>
+	<ScrollView>
+	    <StackLayout Padding="20" BackgroundColor="White">
+      		<StackLayout.Children>
+      			<StackLayout Padding="10" BackgroundColor="White">
+      				<StackLayout.Children>
+      					<Image Source="http://xamarin.com/content/images/pages/forms/example-app.png" />
+        				<Label x:Name="Tittel"
+               			Text="Test"
+               			FontSize="Small"
+               			FontAttributes="None"
+               			HorizontalOptions="Start"
+               			VerticalOptions="CenterAndExpand">
+	          				<Label.TextColor>
+	                			Black
+	          				</Label.TextColor>
+	          			</Label>
+	          				<StackLayout Padding="10" BackgroundColor="White">
+      				<StackLayout.Children>
+      					<Image Source="http://xamarin.com/content/images/pages/forms/example-app.png" />
+        				<Label x:Name="Tittel2"
+               			Text="Test"
+               			FontSize="Small"
+               			FontAttributes="None"
+               			HorizontalOptions="Fill"
+               			VerticalOptions="CenterAndExpand">
+	          				<Label.TextColor>
+	                			Black
+	          				</Label.TextColor>
+	          			</Label>
+	          				<Image Source="http://xamarin.com/content/images/pages/forms/example-app.png" />
+        				<Label x:Name="Tittel3"
+               			Text="Test"
+               			FontSize="Small"
+               			FontAttributes="None"
+               			HorizontalOptions="Fill"
+               			VerticalOptions="CenterAndExpand">
+	          				<Label.TextColor>
+	                			Black
+	          				</Label.TextColor>
+	          			</Label>
+	          				<Image Source="http://xamarin.com/content/images/pages/forms/example-app.png" />
+        				<Label x:Name="Tittel4"
+               			Text="Test"
+               			FontSize="Small"
+               			FontAttributes="None"
+               			HorizontalOptions="Fill"
+               			VerticalOptions="CenterAndExpand">
+	          				<Label.TextColor>
+	                			Black
+	          				</Label.TextColor>
+	          			</Label>
+      		</StackLayout.Children>
+    	</StackLayout>
+    </StackLayout.Children>
+	</StackLayout>
+	</StackLayout.Children>
+	</StackLayout>
+	</ScrollView>  
+	</ContentPage.Content>
+</ContentPage>
