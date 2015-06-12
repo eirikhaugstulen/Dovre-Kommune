@@ -10,7 +10,9 @@ namespace DovreKommune
 		public MyPage ()
 		{
 			InitializeComponent ();
+
 		}
+
 	}
 }
 

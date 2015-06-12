@@ -1,39 +1,52 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="DovreKommune.FrontPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="DovreKommune.FrontPage"
+	xmlns:local="clr-namespace:DovreKommune;assembly=DovreKommune">
+	<ContentPage.BindingContext>
+		<local:FrontPageViewModel />
+	</ContentPage.BindingContext>
 	<ContentPage.Content>
 
 		<ListView x:Name="listView"
-				IsVisible="false"
-            	ItemsSource="{x:Static local:App.Employees}"
-				ItemSelected="EmployeeListOnItemSelected">
+				IsVisible="true"
+				ItemsSource="{Binding Items}">
     		<ListView.ItemTemplate>
       <DataTemplate>
         <ViewCell>
           <ViewCell.View>
-            <StackLayout Orientation="Horizontal">
-
-              <Image Source="{Binding ImageUri}"
-                     WidthRequest="40"
-                     HeightRequest="40" />
-
-              <StackLayout Orientation="Vertical"
-                           HorizontalOptions="StartAndExpand">
-
-                <Label Text="{Binding DisplayName}"
-                       HorizontalOptions="FillAndExpand" />
-
-                <Label Text="{Binding Twitter}"
-                       Font="{x:Static constants:Fonts.Twitter}"/>
-
-              </StackLayout>
-            </StackLayout>
+	          <StackLayout Padding="10" BackgroundColor="White">
+	      				<StackLayout.Children>
+	      					<Image Source="http://xamarin.com/content/images/pages/forms/example-app.png" />
+	        				<Label x:Name="Title"
+	               			Text="{Binding Title}"
+	               			FontSize="Small"
+	               			FontAttributes="None"
+	               			HorizontalOptions="Start"
+	               			VerticalOptions="CenterAndExpand">
+		          				<Label.TextColor>
+		                			Black
+		          				</Label.TextColor>
+		          			</Label>
+		          			<Label x:Name="Title2"
+	               			Text="test"
+	               			FontSize="Small"
+	               			FontAttributes="None"
+	               			HorizontalOptions="Start"
+	               			VerticalOptions="CenterAndExpand">
+		          				<Label.TextColor>
+		                			Black
+		          				</Label.TextColor>
+		          			</Label>
+		          		</StackLayout.Children>
+	    	</StackLayout>
           </ViewCell.View>
         </ViewCell>
       </DataTemplate>
     </ListView.ItemTemplate>
   </ListView>
 
-	<ScrollView>
+	<!---<ScrollView>
 	    <StackLayout Padding="20" BackgroundColor="White">
       		<StackLayout.Children>
       			<StackLayout Padding="10" BackgroundColor="White">
@@ -90,6 +103,6 @@
 	</StackLayout>
 	</StackLayout.Children>
 	</StackLayout>
-	</ScrollView>  
+	</ScrollView> --> 
 	</ContentPage.Content>
 </ContentPage>

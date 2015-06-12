@@ -1,16 +1,21 @@
 ﻿using System;
 
 using Xamarin.Forms;
+using System.Collections.Generic;
 
 namespace DovreKommune
 {
 	public class App : Application
 	{
+		
+
 		public App ()
 		{
 			// Added a test comment
 
 			// La til en test-kommentar.
+
+
 
 			// The root page of your application
 			var NavigationPage = new NavigationPage (new FrontPage ());
@@ -30,6 +35,8 @@ namespace DovreKommune
 			MainPage = NavigationPage;
 			NavigationPage.BarBackgroundColor = Color.FromRgb (132, 187, 255);
 			NavigationPage.BarTextColor = Color.White;
+
+
 
 		}
 
