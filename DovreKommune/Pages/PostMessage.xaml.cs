@@ -10,6 +10,7 @@ namespace DovreKommune
 		public PostMessage ()
 		{
 			InitializeComponent ();
+			this.Title = "Send melding";
 		}
 	}
 }
