@@ -24,7 +24,7 @@ namespace DovreKommune
 		public FrontPageViewModel()
 		{
 			//Henter elementer fra rss feed
-			var rssItems = RssDownloader.DownloadRSS("http://www.sel.kommune.no/rss");
+			var rssItems = RssDownloader.DownloadRSS("http://www.dovre.kommune.no/ArtikkelRSS.ashx?NyhetsKategoriId=1&Spraak=Norsk");
 			Items = rssItems;
 		}
 

@@ -10,26 +10,17 @@
 
 		<ListView x:Name="listView"
 				IsVisible="true"
-				ItemsSource="{Binding Items}">
+				ItemsSource="{Binding Items}"
+				HasUnevenRows="true">
     		<ListView.ItemTemplate>
       <DataTemplate>
-        <ViewCell>
+        <ViewCell Height="150">
           <ViewCell.View>
 	          <StackLayout Padding="10" BackgroundColor="White">
 	      				<StackLayout.Children>
 	      					<Image Source="http://xamarin.com/content/images/pages/forms/example-app.png" />
 	        				<Label x:Name="Title"
 	               			Text="{Binding Title}"
-	               			FontSize="Small"
-	               			FontAttributes="None"
-	               			HorizontalOptions="Start"
-	               			VerticalOptions="CenterAndExpand">
-		          				<Label.TextColor>
-		                			Black
-		          				</Label.TextColor>
-		          			</Label>
-		          			<Label x:Name="Title2"
-	               			Text="test"
 	               			FontSize="Small"
 	               			FontAttributes="None"
 	               			HorizontalOptions="Start"
