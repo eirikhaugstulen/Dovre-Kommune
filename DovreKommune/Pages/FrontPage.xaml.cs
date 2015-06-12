@@ -11,6 +11,9 @@ namespace DovreKommune
 		{
 			InitializeComponent ();
 			this.Title = "Hjem";
+
+			var rssItems = RssDownloader.DownloadRSS("http://www.sel.kommune.no/rss");
+
 		}
 	}
 }
