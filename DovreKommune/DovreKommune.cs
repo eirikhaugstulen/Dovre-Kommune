@@ -10,6 +10,8 @@ namespace DovreKommune
 		{
 			// Added a test comment
 
+			// La til en test-kommentar.
+
 			// The root page of your application
 			var NavigationPage = new NavigationPage (new FrontPage ());
 			NavigationPage.ToolbarItems.Add (new ToolbarItem {
